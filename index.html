@@ -4,19 +4,24 @@
 	<style>
 	body {
 		font-family: sans-serif;
+		margin: 0;
+		font-size: 13pt;
 	}
 	#page-title {
-		font-size: 128pt;
-		text-align: center;
-		border-bottom: 25px solid black;
-		margin-bottom: 50px;
+		font-size: 12.5vw;
+	    text-align: center;
+	    margin: 0;
+	    background-color: red;
+	    color: white;
+	    line-height: 0.9;
+	    padding: 0.3em 0;
 	}
 	h1,h2 {
 		text-transform: capitalize;
 	}
 	.content {
-		max-width: 820px;
-		margin: 0 auto;
+		max-width: 700px;
+		margin: 25px auto;
 	}
 	.pillars {
 		display: flex;
@@ -24,22 +29,57 @@
 		align-items: center;
 		font-size: 24pt;
 	}
+	.pillars > h2 {
+		width: 100vw;
+		text-align: center;
+	}
 	.pillars > * {
 		margin: 5px;
 	}
 	.pillars li {
 		font-weight: bolder;
 	}
+	.quote-block {
+		margin: 1.5em 3vw;
+	}
+	.quote-block > .quote {
+		font-style: italic;
+		margin: 0.5em 0;
+	}
+	.quote-block > .reference {
+		text-align: right;
+	}
+	.blurb {
+		margin: 2em 1em;
+		padding: 0em 1em;
+		border: 2px solid black;
+		background-color: yellow;
+	}
 	b {
-		color: red;
+		font-style: italic;
+	}
+	table {
+		background: #ccc;
+		padding: 1em;
+	}
+	td {
+		padding: 0.4em 0;
 	}
 	</style>
 </head>
 <body>
 <h1 id="page-title">SHAME DRIVEN DEVELOPMENT</h1>
 <div class="content">
+
+	<div class="quote-block">
+		<div class="quote">
+		"[At the end of the Fifth Age of man] And then Aidos and Nemesis, with their sweet forms wrapped in white robes, will go from the wide-pathed earth and forsake mankind to join the company of the deathless gods: and bitter sorrows will be left for mortal men, and there will be no help against evil."
+		</div>
+		<div class="reference">Hesiod, Works and Days 170 ff</div>
+	</div>
+
 	<div class="pillars">
-	<h2>THE THREE PILLARS OF <b>SHAME</b></h2>
+	<h2>THE THREE PILLARS OF SHAME</h2>
 	<ol>
 		<li>Hatred of Old Code</li>
 		<li>Hatred of New Code</li>
@@ -47,21 +87,53 @@
 	</ol>
 	</div>
 
-	<p>The most important part of SDD is to be disgusted by your project’s code. When you look at what you’ve written, you should want to punch yourself in the face. When you write code, you should ask yourself “What would Mother think of this?” and then answer “I should have had an abortion”.</p>
+	<p>The core tenant of <b>Shame Driven Development (SDD)</b> is that <b>all</b> code is unworthy of its own existence. When you look at what you’ve written, you should be overwhelmed with a desire for self-flagellation. You should ask yourself “What would Mother think of this?,” and the correct answer must be “I should have had an abortion.”</p>
 
-	<p>You will have reached peak shame when, upon looking at your code, you kill yourself to prevent you from doing anymore harm to this world.</p>
+	<p>You will have reached <b>peak shame</b> when, upon looking at your code, you kill yourself to prevent you from doing anymore harm to this world.</p>
 
-	<h2>CONTINUOUS FAILURE</h2>
+	<div class="blurb">
+		<h2>CONTINUOUS FAILURE</h2>
+		
+		<p><b>This</b> is the <b>iron ribbon</b> that binds the <b>3 pillars</b> together in a <b>moebius strip</b> of <a>anti-success</b>. It is <b>very important</b> that no stretch of success lasts too long, or you might stop hating yourself, which is the first step on the <b>path to ruin</b>.</p>
 
-	<p>This is the iron ribbon that binds the 3 pillars together in a moebius strip of anti-success. It is very important that no stretch of success lasts too long, or you might stop hating yourself, which is the first step on the path to ruin.</p>
+		<p>Followers of the Old Way have often treated the word "continuous" as a synonym for "pretty often", but we chose to abide by the true definition - implying that <b>not a single iota of time can be considered anything less than failure.</b></p>
+	</div>
 
 	<h1>Chapter 2: Positively Negative Semantics</h1>
 
-	<p>There is no "good", only a deficiency in failure.</p>
+	<p>As the world of misers carries on, our language fades deeper into a dream of artificial niceties.  <b>"No more!"</b> cries the SDD acolyte - for there is no greater evil than to deny oneself of the fruits of pain!  Any measure of what you call "success" is merely a lapse in failure.  "Skill" is just the product of a large tally of errors.  The distinguishing of "good" from "bad" is a coward's folly, and must be remitted from the work of the shame-driven developer.</p>
 
-	<h2>THE RECOGNITION OF FAILURE</h2>
+	<p>Before providing feedback on someone's efforts, please consult the figure below to ensure you are using language that is appropriate for a shame-driven developer.</p>
 
-	<p>At the end of each unit of incompetent development (eg, a sprint) an award show for recognizing team member's failings should be held so that their incompetence will live on forever. This should be highly personalized and insulting so that the bearer never forgets - and thus never repeats - their mistake.</p>
+	<table>
+		<thead><th style="width:45%">Inane Positive Phrase</th><th>SDD-Appropriate Replacement</th></thead>
+		<tbody>
+			<tr>
+				<td>Great work! You really knocked that one out of the park!</td>
+				<td>Your lack of scrutiny is insulting to our work. Try harder at finding your failures.</td>
+			</tr>
+			<tr>
+				<td>We've had a great quarter! Sales are at an all-time high thanks to everyone's efforts!</td>
+				<td>Another terrible financial quarter thanks to you morons. Continue improving upon your mistakes, so that our shareholders may reap the rewards of your labour.</td>
+			</tr>
+			<tr>
+				<td>Have you tried the new cafe on the corner?  Their macchiato is to die for!</td>
+				<td>The shit being peddled from the cafe on the corner is less terrible than many other establishments.</td>
+			</tr>
+			<tr>
+				<td>You've performed adequately since our last performance review.</td>
+				<td>Kill yourself.</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="blurb">
+		<h2>RECOGNITION OF FAILURE</h2>
+
+		<p>At the end of each unit of incompetent development (e.g. a sprint) an award show for recognizing team member's failings should be held so that their incompetence will live on forever. This should be highly personalized and insulting so that the bearer never forgets (and thus never repeats) their mistakes.  We call this SDD ritual, the <b>Failure Parade</b>.</p>
+
+		<p><b>Note: </b>This is not to be confused with the dreadful <b>Retrospective</b> of the Old Way, where failure is eschewed for a false sense of hope.  Only through the <b>acceptance of failure</b> can we begin the healing process.</p>
+	</div>
 <div>
 </body>
 </html>
