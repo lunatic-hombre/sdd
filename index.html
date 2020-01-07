@@ -13,8 +13,8 @@
 	    margin: 0;
 	    background-color: red;
 	    color: white;
-	    line-height: 0.9;
-	    padding: 0.3em 0;
+	    line-height: 1.1;
+	    padding: 0.5em 0;
 	}
 	h1,h2 {
 		text-transform: capitalize;
@@ -40,7 +40,7 @@
 		font-weight: bolder;
 	}
 	.quote-block {
-		margin: 1.5em 3vw;
+		margin: 2.5em 3vw;
 	}
 	.quote-block > .quote {
 		font-style: italic;
@@ -64,6 +64,22 @@
 	}
 	td {
 		padding: 0.4em 0;
+	}
+	figure {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	figcaption {
+		max-width: 375px;
+		font-style: italic;
+		text-align: center;
+		padding: 0.3em;
+	}
+	.yinyang > svg {
+		width: 300px;
+		height: 300px;
 	}
 	</style>
 </head>
@@ -134,6 +150,37 @@
 
 		<p><b>Note: </b>This is not to be confused with the dreadful <b>Retrospective</b> of the Old Way, where failure is eschewed for a false sense of hope.  Only through the <b>acceptance of failure</b> can we begin the healing process.</p>
 	</div>
+
+
+	<h1>Chapter 3: Rage</h1>
+
+	<div class="quote-block" style="margin:4.5vh auto; max-width: 400px">
+		<div class="quote">
+		"Do not go gentle into that good night,<br />
+		Old age should burn and rave at close of day;<br />
+		Rage, rage against the dying of the light."
+		</div>
+		<div class="reference">Dylan Thomas</div>
+	</div>
+
+	<p>Hatred is the central driving force in SDD.  The inward, reflective form of hatred comes in the form of <b>shame</b>, which hones your spirit like a fine instrument.  The outward, explosive form of hatred is <b>rage</b>, which propels you forward like the burning coals of a steam engine.</p>
+
+	<p>Despite our best intentions, legacy code will need to be revisited frequently.  When we find ourselves in a thick mass of garbage, we can feel as though we have become untethered to the realm of reason, lost in a sea of shit.  During these times, our wrath can be a beacon of mercy against despair.  <i>Let rage be your guide and you will become <b>invincible</b>.</i></p>
+
+	<figure class="yinyang">
+		<svg xmlns="http://www.w3.org/2000/svg" width="466" height="466" viewBox="-40 -40 80 80">
+			<circle r="39"/>
+			<path d="M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38" fill="#fff"/>
+			<circle cy="19" r="5" fill="#fff"/>
+			<circle cy="-19" r="5"/>
+			<text x="-33" y="-2" style="font-size:10px">RAGE</text>
+			<text x="-2" y="10" style="font-size:10px;fill:white">SHAME</text>
+		</svg>
+		<figcaption>
+			The counter-balancing forces of RAGE and SHAME in the infinite cyclone of disgust.
+		</figcaption>
+	</div>
+
 <div>
 </body>
 </html>
